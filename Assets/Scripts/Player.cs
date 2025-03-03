@@ -24,4 +24,8 @@ public class Player : MonoBehaviour{
             isGrounded = false; 
         }
     }
+
+     private void OnCollisionEnter(Collision collision) {
+        isGrounded = true;
+    }
 }
